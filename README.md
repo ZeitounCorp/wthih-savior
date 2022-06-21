@@ -1,35 +1,49 @@
 # Wthih-Savior
 
-**Porting the Visa Checkout SDK to React**
+**The solution for handling errors with ease**
 
-- Lightweight: The Visa Checkout SDK is a small, lightweight library that can be used to integrate Visa Checkout into your application.
-- Easy to use: As simple as rendering a `<VisaCheckoutButton />` component in your application.
-- Supports latest React version: The Visa Checkout SDK is compatible with the latest version of React.
-- Includes all the features of the Visa Checkout SDK and should be maintained in sync with the latest version at all time.
+- Lightweight: No (extra) dependencies making it easy to maintain.
+- Easy to use: Simply call `wthih` function inside one of your try/catch blocks.
+- Work both on the server and the browser without any configuration on your side.
 
 ## tl;dr
 
-- Install by executing `npm install react-visa-checkout` or `yarn add react-visa-checkout`.
-- Import by adding `import VisaCheckoutButton from 'react-visa-checkout'`.
-- Use by adding `<VisaCheckoutButton />`.
+- Install by executing `npm install wthih-savior` or `yarn add wthih-savior`.
+- Import by adding `import wthih from 'wthih-savior'`.
+
+## Usage
+
+```javascript
+import wthih from 'wthih-savior';
+
+try {
+  // code that may raise an error
+} catch (error) {
+  // handle error on one site
+  wthih('stackoverflow', error.message);
+  // handle error on multiple sites
+  wthih(['stackoverflow', 'dev.to', 'medium'], error.message);
+}
+```
 
 ## Demo
 
-A minimal demo page can be found in `sample` directory.
+A minimal usage demo can be found in `sample` directory.
 
 ## Before you continue
 
-React-Visa-Checkout is not an official library and is under constant development. This documentation is written for React-Visa-Checkout V1.x (main branch).
+This library is under constant development. This documentation is written for wthih-savior V1.x (main branch).
 
 ## Getting started
 
 ### Compatibility
 
-Your project needs to use React 18.2 or later.
+All browsers/clients are supported.
+Support all version of Node.js starting from v12.
 
 ### Installation
 
-Add React-Visa-Checkout to your project by executing `npm install react-visa-checkout` or `yarn add react-visa-checkout`.
+Add Wthih-Savior to your project by executing `npm install wthih-savior` or `yarn add wthih-savior`.
 
 ## License
 
@@ -51,3 +65,7 @@ The ISC License.
 </table>
 
 ## Thank you
+
+```
+
+```
