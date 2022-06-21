@@ -23,9 +23,17 @@ try {
   wthih('stackoverflow', error);
   // handle error on multiple sites
   wthih(['stackoverflow', 'dev.to', 'medium'], error);
-  // Any non-supported site will be ignored
+  // handle error on multiple sites with options
+  wthih(['stackoverflow', 'dev.to', 'medium'], error, {
+   openBlank: true, // default: true - open in a new tab
+   printLinks: true, // default: false - should the generated helpers links be printed to the console
+   printErrors: true, // default: true - should the original error still be printed to the console
 }
 ```
+
+## ⚠️ Warning
+
+Any non-supported site will be ignored.
 
 ## Demo
 
