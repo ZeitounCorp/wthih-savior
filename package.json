@@ -1,0 +1,36 @@
+{
+  "name": "wthih-savior",
+  "version": "0.0.1",
+  "description": "Library for browser and NodeJs that take errors and open adequate site for help (stackoverflow, dev.to, medium...)",
+  "repository": "git://github.com/ZeitounCorp/wthih-savior.git",
+  "scripts": {
+    "prepublishOnly": "npm run rollup",
+    "rollup": "rollup -c",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "ZeitounCorp",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/jest": "^28.1.1",
+    "babel-jest": "^28.1.1",
+    "babel-loader": "^8.2.5",
+    "jest": "^28.1.1",
+    "rollup": "^2.75.6",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "license": "ISC"
+}
