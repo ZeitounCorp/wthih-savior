@@ -1,6 +1,6 @@
 {
   "name": "wthih-savior",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for browser and NodeJs that take errors and open adequate site for help (stackoverflow, dev.to, medium...)",
   "repository": "git://github.com/ZeitounCorp/wthih-savior.git",
   "scripts": {
@@ -11,15 +11,15 @@
   "keywords": [],
   "author": "ZeitounCorp",
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
     "@types/jest": "^28.1.1",
     "babel-jest": "^28.1.1",
     "babel-loader": "^8.2.5",
-    "@babel/core": "^7.18.5",
-    "@babel/preset-env": "^7.18.2",
-    "@babel/preset-typescript": "^7.17.12",
     "jest": "^28.1.1",
     "rollup": "^2.75.6",
     "rollup-plugin-dts": "^4.2.2",
