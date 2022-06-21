@@ -2,7 +2,7 @@
 
 **The solution for handling errors with ease**
 
-- Lightweight: No (extra) dependencies making it easy to maintain.
+- Lightweight
 - Easy to use: Simply call `wthih` function inside one of your try/catch blocks.
 - Work both on the server and the browser without any configuration on your side.
 
@@ -20,9 +20,10 @@ try {
   // code that may raise an error
 } catch (error) {
   // handle error on one site
-  wthih('stackoverflow', error.message);
+  wthih('stackoverflow', error);
   // handle error on multiple sites
-  wthih(['stackoverflow', 'dev.to', 'medium'], error.message);
+  wthih(['stackoverflow', 'dev.to', 'medium'], error);
+  // Any non-supported site will be ignored
 }
 ```
 
@@ -33,6 +34,7 @@ A minimal usage demo can be found in `sample` directory.
 ## Before you continue
 
 This library is under constant development. This documentation is written for wthih-savior V1.x (main branch).
+If a website is not listed in the documentation, please open an issue or a pull request.
 
 ## Getting started
 
